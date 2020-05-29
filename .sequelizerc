@@ -1,0 +1,11 @@
+const path = require("path");
+
+const config = path.resolve("./server/config", "config.json");
+const models = path.resolve("./server/models");
+const migrations = path.resolve("./server/migrations");
+
+module.exports = {
+  config,
+  "models-path": models,
+  "migrations-path": migrations,
+};
